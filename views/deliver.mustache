@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>head}}
+  </head>
+  <body>
+
+	  {{>nav}}
+
+      <section class="hero-wrap hero-wrap-2" style="background-image: url('images/delivery1.jpg');" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row no-gutters slider-text align-items-center justify-content-center">
+            <div class="col-md-9 ftco-animate text-center">
+              <h1 class="mb-2 bread">Delivery</h1>
+              <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Delivery <i class="ion-ios-arrow-forward"></i></span></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+  <section id="features">
+    <div class="row">
+      <div class="feature-box col-lg-4">
+        <i class="fas fa-heart feature-icon fa-4x" aria-hidden="true"></i>
+        <h3 class="feature-title">100% healthy</h3>
+        <p>All our vegetables are fresh,organic,and Local. Animals are raised without added antibiotics</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="fas fa-pizza-slice feature-icon fa-4x" aria-hidden="true"></i>
+        <h3 class="feature-title">Ready in 30 minutes.</h3>
+        <p>You are only 20 minutes away from your delicious meals.</p>
+      </div>
+      <div class="feature-box col-lg-4">
+        <i class="fas fa-shipping-fast feature-icon fa-4x" aria-hidden="true"></i>
+        <h3 class="feature-title">Fast Delivery</h3>
+        <p>Super healthy meals delivered to your doorsteps</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+		<section class="ftco-section ftco-no-pt ftco-no-pb">
+			<div class="container">
+				<div class="row d-flex">
+          <div class="col-md-5 ftco-animate img img-2" style="background-image: url(images/indoor2.jpg);"></div>
+          <div class="col-md-7 ftco-animate makeorder p-4 p-md-5">
+          	<div class="heading-section ftco-animate mb-5">
+	          	<span class="subheading">Order now</span>
+	            <h2 class="mb-4">Get delivered at Home</h2>
+	          </div>
+            <form action="/order" method="post">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Name</label>
+                    <input id="order-name" name="name" type="text" class="form-control" placeholder="Your Name">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Email</label>
+                    <input id="order-email" name="email" type="text" class="form-control" placeholder="Your Email">
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="">Order</label>
+                    <textarea id="order-description" name="order" style="background: #f9f9f9 !important" class="form-control" rows="3" placeholder="Describe your order here."></textarea>
+                  </div>
+                </div>
+
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="">Your Location</label>
+                    <textarea id="order-loc" name="loc" style="background: #f9f9f9 !important" class="form-control" rows="3" placeholder="eg: Office Lane"></textarea>
+                  </div>
+                </div>
+
+                <!-- <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Time</label>
+                    <input type="text" class="form-control" id="book_time" placeholder="Time">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Person</label>
+                    <div class="select-wrap one-third">
+                      <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                      <select name="" id="" class="form-control">
+                        <option value="">Person</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4+</option>
+                      </select>
+                    </div>
+                  </div>
+                </div> -->
+                <div class="col-md-12 mt-3">
+                  <div id="btn-order-container" class="form-group">
+                    <input id="btn-order" type="submit" value="Place order" class="btn btn-primary py-3 px-5">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+			</div>
+		</section>
+
+
+
+
+
+
+        {{>footer}}
+        {{>scripts}}
+
+  <script>
+    (
+      function(){
+        console.log('Hello')
+        $('#btn-order').click(function(event){
+          if(event)
+            event.preventDefault()
+            var order={
+              name:$('#order-name').val(),
+              email:$('#order-email').val(),
+              order:$('#order-description').val(),
+              loc:$('#order-loc').val()
+            }
+              console.log('Place order: '+ JSON.stringify(order))
+
+              $.ajax({
+                url: './order',
+                method:'post',
+                data: order,
+                success: function(resp){
+                  console.log('ORDER RECEIVED:'+ JSON.stringify(resp))
+                  $('#btn-order-container').html('<h3 >Thanks! Check email.</h3>')
+                },
+                error: function(resp){
+                }
+              })
+        })
+      }
+    )
+    ()
+  </script>
+
+        </body>
+      </html>

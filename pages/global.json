@@ -1,0 +1,12 @@
+{
+  "title": "FOOD Hub",
+  "description": "Welcome to our restro! Hope you enjoy.",
+  "location":"   Office Road,Agartala,Tripura,799001",
+  "mail":"   abcde@foodhub.com",
+  "phone":"   9808787438",
+  "hour":[
+    {"day":"Monday-Friday","time":"1pm to 10 pm"},
+    {"day":"Saturday","time":"1pm to 11pm"},
+    {"day":"Sunday","time":"12 pm to 9 pm"}
+  ]
+}

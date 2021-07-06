@@ -1,0 +1,30 @@
+{
+  "hero":{
+    "header1": "Enjoy Healthy <br> and Natural Foods",
+    "header2":"We serve <br> Happiness",
+    "subtext":"An adventure in Freshly Foraged Foods!",
+    "bg_img1":"images/bg_14.jpg",
+    "bg_img2":"images/indoor3.jpg"
+  },
+  "about":{
+    "header":"Welcome to FOOD Hub",
+    "subtext":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,",
+    "bg_image":"images/indoor1.jpg",
+    "images":[
+      {"image":"images/starter-1.jpg", "caption":"BBQ Chicken Skewers"},
+      {"image":"images/starter-4.jpg", "caption":"Chili/Pepper Prawn"},
+      {"image":"images/honey-chicken.jpg", "caption":"Honey Chicken"}
+    ]
+  },
+  "testimony":{
+    "subheader":"Testimony",
+    "header":"Happy Customer",
+    "customer":[
+      {"name":"Arthur Browner", "image":"images/person_1.jpg", "quote":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. ", "position":"Customer"},
+      {"name":"Arthur Browner", "image":"images/person_2.jpg", "quote":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. ", "position":"Customer"},
+      {"name":"Arthur Browner", "image":"images/person_3.jpg", "quote":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. ", "position":"Customer"},
+      {"name":"Arthur Browner", "image":"images/person_4.jpg", "quote":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. ", "position":"Customer"},
+      {"name":"Arthur Browner", "image":"images/person_3.jpg", "quote":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. ", "position":"Customer"}
+    ]
+  }
+}

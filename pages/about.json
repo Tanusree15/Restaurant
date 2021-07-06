@@ -1,0 +1,34 @@
+{
+  "about":{
+    "header":"Welcome to FOOD Hub",
+    "subtext":"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,",
+    "bg_image":"images/about2.jpg",
+    "images":[
+      {"image":"images/starter-1.jpg", "caption":"BBQ Chicken Skewers"},
+      {"image":"images/starter-4.jpg", "caption":"Chili/Pepper Prawn"},
+      {"image":"images/honey-chicken.jpg", "caption":"Honey Chicken"}
+    ]
+  },
+  "testimony":{
+    "subheader":"Testimony",
+    "header":"Happy Customer",
+    "customer":[
+      {"name":"Arthur Browner", "image":"images/person_1.jpg", "quote":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.", "position":"Customer"},
+      {"name":"Arthur Browner", "image":"images/person_2.jpg", "quote":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.", "position":"Customer"},
+      {"name":"Arthur Browner", "image":"images/person_3.jpg", "quote":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.", "position":"Customer"},
+      {"name":"Arthur Browner", "image":"images/person_4.jpg", "quote":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.", "position":"Customer"},
+      {"name":"Arthur Browner", "image":"images/person_3.jpg", "quote":"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.", "position":"Customer"}
+    ]
+  },
+  "chef":{
+    "subheader":"Chef",
+    "header":"Our Master chef",
+    "people":[
+      {"name":"Walter White", "position":"CEO, Co Founder", "image":"images/chef_6.jpg", "description":"I am an ambitious workaholic, but apart from that, pretty simple person."},
+      {"name":"Sarah Johnson", "position":"Head Chef", "image":"images/chef_5.jpg", "description":"I am an ambitious workaholic, but apart from that, pretty simple person."},
+      {"name":"Rebeca Welson", "position":"Chef", "image":"images/chef_2.jpg", "description":"I am an ambitious workaholic, but apart from that, pretty simple person."},
+      {"name":"Kharl Branyt", "position":"Chef", "image":"images/chef_3.jpg", "description":"I am an ambitious workaholic, but apart from that, pretty simple person."}
+
+    ]
+  }
+}
